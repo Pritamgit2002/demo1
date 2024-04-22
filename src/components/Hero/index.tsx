@@ -37,7 +37,7 @@ function Section({ children }: { children: any }) {
   return (
     <section
       ref={ref}
-      className=" w-max h-screen border-x-2 border-black flex items-end justify-center  "
+      className=" w-max h-screen flex items-end justify-center  "
     >
       <span
         style={{
