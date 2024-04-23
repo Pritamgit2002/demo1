@@ -5,7 +5,7 @@ import { useRef } from "react";
 //dropping animation
 const ballVariants = {
   hidden: {
-    y: "-110vh",
+    y: "-100vh",
     opacity: 0,
   },
   visible: (delay: number) => ({
@@ -14,7 +14,7 @@ const ballVariants = {
     transition: {
       delay,
       type: "spring",
-      stiffness: 110,
+      stiffness: 100,
       damping: 15,
     },
   }),
@@ -33,7 +33,7 @@ export function Section({
   return (
     <section
       ref={ref}
-      className="w-max h-[110vh]   flex items-end justify-center"
+      className="w-max h-screen xl:h-[118vh] flex items-end justify-center"
     >
       <motion.div
         variants={ballVariants}

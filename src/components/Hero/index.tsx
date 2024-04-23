@@ -42,7 +42,7 @@ const Hero = () => {
           Sophy Crown - Life Coach & Performance Consultant
         </span>
       </div>
-      <div className=" flex  items-end justify-center  w-full h-[118vh] ">
+      <div className=" flex  items-end justify-center  w-full h-screen xl:h-[118vh] ">
         <div className="-translate-y-60 lg:translate-y-0 translate-x-36 sm:translate-x-7 lg:translate-x-0 z-20   hover:scale-105 hover:-translate-y-7 transition-all duration-300  ">
           <Section delay={0.8}>
             <Image
@@ -103,7 +103,7 @@ const Hero = () => {
         <div className=" -translate-x-36 sm:-translate-x-20 lg:translate-x-0 ">
           <Section delay={0.2}>
             <span
-              className={` h-36 sm:h-48 w-36 sm:w-48 p-2 font-serif rounded-full bg-white text-center flex flex-col  items-center justify-center text-lg sm:text-lg cursor-pointer hover:scale-110 hover:-translate-y-6 transition-all duration-500 z-10 delay-300 text-[#1B1C1E] italic `}
+              className={` h-40 sm:h-48 w-40 sm:w-48 p-2 font-serif rounded-full bg-white text-center flex flex-col  items-center justify-center text-lg sm:text-lg cursor-pointer hover:scale-110 hover:-translate-y-6 transition-all duration-500 z-10 delay-300 text-[#1B1C1E] italic `}
             >
               <Image
                 src="/black book.svg"
