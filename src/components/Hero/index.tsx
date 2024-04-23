@@ -32,7 +32,7 @@ const index = () => {
       </div>
       <div className=" flex  items-end justify-center sm:justify-around  w-full h-screen bg-black/90   ">
         <div className="-translate-y-56 sm:translate-y-0 translate-x-28 sm:translate-x-0  z-20 ">
-          <Section>
+          <Section delay={0.8}>
             <motion.span className="rounded-full bg-white text-center flex items-center justify-center text-6xl xl:text-8xl font-semibold -rotate-12 cursor-pointer z-10 leading-relaxed delay-300  ">
               <LiaDharmachakraSolid />
             </motion.span>
