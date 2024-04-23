@@ -1,7 +1,6 @@
-import Discover from "@/components/discover";
 import Testimonial from "@/components/testimonial";
 import React from "react";
-import Character from "@/components/Character";
+import Character from "@/components/character/Character";
 import Hero from "@/components/hero";
 type Props = {};
 
@@ -11,7 +10,6 @@ const page = (props: Props) => {
   const paragraph2 = "Because nothing great is done alone.";
   return (
     <div className=" bg-black ">
-      {/* <div className=" h-screen w-full "></div> */}
       <Hero />
       <div className=" pt-28 ">
         <Character paragraph={paragraph} />
