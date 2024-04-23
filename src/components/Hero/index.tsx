@@ -11,8 +11,8 @@ import { Section } from "./hero.animation";
 
 const Hero = () => {
   return (
-    <div className=" flex items-center justify-center  w-full h-screen xl:h-[118vh] relative bg-[#1B1C1E] ">
-      <div className="w-full h-80 flex flex-col gap-y-2 top-0 items-center justify-end select-none absolute z-10   ">
+    <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
+      <div className="w-full h-96 flex flex-col gap-y-2 top-0 items-center justify-end select-none absolute z-10   ">
         <span className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[100px] italic text-white font-serif text-center  items-start gap-x-2 ">
           Unloacking Your Potential
           <span className="  ">
@@ -42,7 +42,7 @@ const Hero = () => {
           Sophy Crown - Life Coach & Performance Consultant
         </span>
       </div>
-      <div className=" flex  items-end justify-center  w-full h-screen xl:h-[118vh] ">
+      <div className=" flex  items-end justify-center  w-full h-auto ">
         <div className="-translate-y-60 lg:translate-y-0 translate-x-36 sm:translate-x-7 lg:translate-x-0 z-20   hover:scale-105 hover:-translate-y-7 transition-all duration-300  ">
           <Section delay={0.8}>
             <Image

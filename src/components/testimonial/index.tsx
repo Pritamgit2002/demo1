@@ -8,14 +8,14 @@ const Testimonial = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0, 3], ["1%", "-280%"]);
+  const x = useTransform(scrollYProgress, [0, 3], ["1%", "-250%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-100 ">
+    <section ref={targetRef} className="relative h-[250vh] bg-neutral-100 ">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="  flex gap-12 ">
           {cards.map((card, index) => {
-            const initialRotation = index % 2 === 0 ? -5 : 5;
+            const initialRotation = index % 2 === 0 ? 0 : 0;
             const rotate = useTransform(
               scrollYProgress,
               [0, 3],

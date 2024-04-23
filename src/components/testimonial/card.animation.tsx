@@ -4,7 +4,7 @@ export const Card = ({ card }: { card: any }) => {
   return (
     <div
       key={card.id}
-      className={`group relative h-max w-[350px] overflow-hidden rounded-3xl py-10 px-5 shadow-md shadow-gray-400 flex flex-col gap-y-8  ${
+      className={`group relative h-max w-[350px] overflow-hidden rounded-3xl py-10 px-8 shadow-md shadow-gray-400 flex flex-col gap-y-8  ${
         card.id % 2 === 0
           ? "bg-black text-[#abee5f]"
           : "bg-[#abee5f] text-black"

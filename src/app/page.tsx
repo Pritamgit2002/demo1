@@ -17,6 +17,7 @@ const page = (props: Props) => {
         <Character paragraph={paragraph2} />
       </div> */}
       {/* <Staggering /> */}
+
       <Testimonial />
     </div>
   );
