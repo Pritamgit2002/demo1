@@ -1,7 +1,7 @@
 import Testimonial from "@/components/testimonial";
 import React from "react";
 import Character from "@/components/character/Character";
-import Hero from "@/components/hero";
+import Hero from "@/components/Hero";
 type Props = {};
 
 const page = (props: Props) => {
