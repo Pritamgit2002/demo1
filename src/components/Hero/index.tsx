@@ -43,7 +43,7 @@ const index = () => {
           <div className=" flex justify-center items-center translate-x-10 sm:translate-x-0   ">
             <Section delay={0.5}>
               <span
-                className={` w-60 xl:w-[470px] h-60 xl:h-[470px] p-20 sm:p-14 xl:p-20 rounded-full bg-[#ABEE5F]  text-center flex sm:flex-wrap items-center justify-center text-xl sm:text-3xl xl:text-7xl rotate-12 hover:-rotate-12 cursor-pointer  hover:scale-110 hover:-translate-y-6 transition-all duration-500 z-10 leading-relaxed font-serif delay-300`}
+                className={` w-60 xl:w-[470px] h-60 xl:h-[470px] p-20 sm:p-14 xl:p-20 rounded-full bg-[#ABEE5F]  text-center flex sm:flex-wrap items-center justify-center text-xl sm:text-3xl xl:text-7xl -rotate-12 cursor-pointer  hover:scale-110 hover:-translate-y-6 transition-all duration-500 z-10 leading-relaxed font-serif `}
               >
                 Happiness & Fulfillment
               </span>
@@ -52,7 +52,7 @@ const index = () => {
           <div className=" flex -translate-y-40 sm:translate-y-0 translate-x-8 sm:translate-x-0  ">
             <Section delay={0.6}>
               <span
-                className={` w-max xl:w-72 h-24 xl:h-40 p-5 xl:p-10 rounded-full bg-white border-dashed border-y-2 border-black text-center hidden lg:flex flex-wrap items-center justify-center text-xl sm:text-3xl  hover:-rotate-12 hover:scale-110 hover:-translate-y-6 cursor-pointer transition-all duration-300 z-20 font-serif delay-300 `}
+                className={` w-max xl:w-72 h-24 xl:h-40 p-5 xl:p-10 rounded-full bg-white border-dashed border-y-2 border-black text-center hidden lg:flex  items-center justify-center text-xl sm:text-3xl  hover:-rotate-12 hover:scale-110 hover:-translate-y-6 cursor-pointer transition-all duration-300 z-20 font-serif  `}
               >
                 Team
                 <div className=" text-xl space-x-4 ">
