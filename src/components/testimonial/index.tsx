@@ -1,6 +1,5 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
-import Image from "next/image";
 import { useRef } from "react";
 import { Card } from "./card.animation";
 import { cards } from "./card.content";
@@ -12,15 +11,15 @@ const Testimonial = () => {
   const x = useTransform(scrollYProgress, [0, 3], ["1%", "-280%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-white">
+    <section ref={targetRef} className="relative h-[300vh] bg-neutral-100 ">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="  flex gap-14 ">
+        <motion.div style={{ x }} className="  flex gap-12 ">
           {cards.map((card, index) => {
-            const initialRotation = index % 2 === 0 ? 5 : -5;
+            const initialRotation = index % 2 === 0 ? -5 : 5;
             const rotate = useTransform(
               scrollYProgress,
               [0, 3],
-              [initialRotation, index % 2 === 0 ? 40 : -40]
+              [initialRotation, index % 2 === 0 ? -40 : 40]
             );
             return (
               <motion.div style={{ rotate }} key={card.id}>

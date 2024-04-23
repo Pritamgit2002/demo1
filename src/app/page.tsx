@@ -2,6 +2,7 @@ import Testimonial from "@/components/testimonial";
 import React from "react";
 import Character from "@/components/character/Character";
 import Hero from "@/components/Hero";
+import Staggering from "@/components/stagger";
 type Props = {};
 
 const page = (props: Props) => {
@@ -11,11 +12,12 @@ const page = (props: Props) => {
   return (
     <div className=" bg-black ">
       <Hero />
-      <div className=" pt-28 ">
+      {/* <div className=" pt-28 ">
         <Character paragraph={paragraph} />
         <Character paragraph={paragraph2} />
-      </div>
-      <Testimonial />
+      </div> */}
+      {/* <Staggering /> */}
+      {/* <Testimonial /> */}
     </div>
   );
 };
