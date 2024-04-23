@@ -27,7 +27,7 @@ const Hero = () => {
         </span>
         <span className=" text-5xl sm:text-6xl flex flex-col lg:hidden lg:text-[100px] italic text-white font-serif text-center  items-center gap-x-2 ">
           Unloacking Your
-          <span className=" flex items-start ">
+          <span className=" flex items-start gap-x-1 ">
             <span>Potential</span>
             <Image
               src="/green.svg"
