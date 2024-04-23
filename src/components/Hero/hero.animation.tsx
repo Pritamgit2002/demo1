@@ -26,7 +26,7 @@
 // }
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-
+//dropping animation
 const ballVariants = {
   hidden: {
     y: "-100vh",
@@ -68,3 +68,43 @@ export function Section({
     </section>
   );
 }
+
+// automatic rotating
+
+// const spinAnimation = {
+//   spin: {
+//     rotate: 360,
+//     transformOrigin: "50% 50%",
+//     transition: {
+//       repeat: Infinity,
+//       ease: "linear",
+//       duration: 10, // Adjust this value to control the initial spin speed
+//     },
+//   },
+//   spinHover: {
+//     rotate: 360,
+//     transformOrigin: "50% 50%",
+//     transition: {
+//       repeat: Infinity,
+//       ease: "linear",
+//       duration: 5, // Adjust this value to control the spin speed on hover
+//     },
+//   },
+// };
+
+// export const SpinningComponent = ({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) => {
+//   return (
+//     <motion.div
+//       variants={spinAnimation}
+//       animate="spin"
+//       whileHover="spinHover"
+//       style={{ display: "inline-block" }}
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// };
