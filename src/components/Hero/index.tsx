@@ -9,7 +9,7 @@ import { LiaDharmachakraSolid } from "react-icons/lia";
 import Image from "next/image";
 import { Section } from "./hero.animation";
 
-const index = () => {
+const Hero = () => {
   const [rotation, setRotation] = useState(0);
   const [intervalDuration, setIntervalDuration] = useState(100);
 
@@ -93,4 +93,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Hero;

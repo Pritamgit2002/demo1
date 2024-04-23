@@ -1,8 +1,8 @@
 import Discover from "@/components/discover";
-import Hero from "@/components/hero";
 import Testimonial from "@/components/testimonial";
 import React from "react";
 import Character from "@/components/Character";
+import Hero from "@/components/hero";
 type Props = {};
 
 const page = (props: Props) => {
