@@ -73,16 +73,13 @@ const Hero = () => {
           <div className=" flex justify-center items-center translate-x-10 sm:translate-x-0  relative ">
             <Section delay={0.5}>
               <span
-                className={`
-    w-60 sm:w-72 lg:w-[450px] xl:w-[500px] 2xl:w-[520px] h-60 sm:h-72 lg:h-[450px] xl:h-[500px] 2xl:h-[520px] sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] lg:text-[74px] xl:text-[95px] 2xl:text-[105px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading-[60px] lg:!leading-[80px] xl:!leading-[120px] font-instrument-serif select-none
-  `}
+                className={` w-60 sm:w-72 lg:w-[450px] xl:w-[500px] 2xl:w-[520px] h-60 sm:h-72 lg:h-[450px] xl:h-[500px] 2xl:h-[520px] sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] lg:text-[74px] xl:text-[95px] 2xl:text-[105px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading- [60px] lg:!leading-[80px] xl:!leading-[120px] font-instrument-serif select-none xl:!translate-x-12 2xl:!-translate-x-28 !-rotate-12 `}
                 style={{
-                  transform: "rotate(-30deg)",
                   transition: "transform 0.5s ease", // Add transition for smooth animation
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.transform =
-                    "rotate(-30deg) scale(1.12)";
+                    "rotate(-30deg) scale(1.14)";
                 }}
                 onMouseOut={(e) => {
                   e.currentTarget.style.transform = "rotate(-30deg)";
@@ -93,7 +90,7 @@ const Hero = () => {
             </Section>
             <Section delay={0.6}>
               <span
-                className={` w-max xl:w-80 h-24 xl:h-36 p-5 xl:p-10 rounded-full bg-white border-dashed  text-[#1B1C1E] text-center hidden lg:flex  items-center justify-center gap-1 text-xl sm:text-[32px]  hover:-rotate-12 hover:scale-110 hover:-translate-y-6 cursor-pointer transition-all duration-300 z-30 font-instrument-serif italic absolute bottom-0 `}
+                className={` w-max xl:w-80 h-24 xl:h-36 p-5 xl:p-10 rounded-full bg-[#F2F2F2] border-dashed  text-[#1B1C1E] text-center hidden lg:flex  items-center justify-center gap-1 text-xl sm:text-[32px]  hover:-rotate-12 hover:scale-110 hover:-translate-y-6 cursor-pointer transition-all duration-300 z-30 font-instrument-serif italic absolute bottom-0 `}
               >
                 <span>Team</span>
                 <div className=" text-xl space-x-4 ">
@@ -127,7 +124,7 @@ const Hero = () => {
         <div className=" -translate-x-36 sm:-translate-x-20 lg:-translate-x-4 ">
           <Section delay={0.2}>
             <span
-              className={` h-40 w-40 p-4 font-instrument-serif rounded-full bg-white text-center flex flex-col  items-center justify-center text-lg sm:text-xl cursor-pointer xl:hover:scale-110 hover:xl:-translate-y-2 transition-all duration-500 delay-300 text-[#1B1C1E] italic `}
+              className={` h-40 w-40 p-4 font-instrument-serif rounded-full bg-[#F2F2F2] text-center flex flex-col  items-center justify-center text-lg sm:text-xl cursor-pointer xl:hover:scale-110 hover:xl:-translate-y-2 transition-all duration-500 delay-300 text-[#1B1C1E] italic `}
             >
               <Image
                 src="/black book.svg"
