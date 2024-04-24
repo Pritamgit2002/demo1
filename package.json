@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/instrument-sans": "^5.0.5",
     "@fontsource/instrument-serif": "^5.0.20",
     "@next/font": "^14.2.2",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
+    "@react-spring/web": "^9.7.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "framer-motion": "^11.1.7",

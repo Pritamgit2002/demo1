@@ -3,7 +3,6 @@
 @tailwind utilities;
 /* styles/globals.css */
 @import "@fontsource/instrument-serif";
-
 .font-instrument-serif {
   font-family: "Instrument Serif", serif;
 }

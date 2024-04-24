@@ -8,6 +8,9 @@ import localFont from "next/font/local";
 const heading = localFont({
   src: "../../../public/fonts/InstrumentSerif-Italic.ttf",
 });
+const subHeading = localFont({
+  src: "../../../public/fonts/InstrumentSans-VariableFont_wdth,wght.ttf",
+});
 const Hero = () => {
   return (
     <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
@@ -44,7 +47,10 @@ const Hero = () => {
             />
           </span>
         </span>
-        <span className=" flex-wrap text-base sm:text-xl lg:text-2xl text-[#ABEE5F] text-center w-72 lg:w-auto ">
+        <span
+          className=" flex-wrap text-base sm:text-xl lg:text-2xl text-[#ABEE5F] text-center w-72 lg:w-auto "
+          style={subHeading.style}
+        >
           Sophy Crown - Life Coach & Performance Consultant
         </span>
       </div>
