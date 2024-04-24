@@ -11,9 +11,9 @@ const heading = localFont({
 const Hero = () => {
   return (
     <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
-      <div className="w-full h-[250px] lg:h-[430px] flex flex-col gap-y-6 top-0 items-center justify-end select-none absolute z-10  ">
+      <div className="w-full h-[250px] lg:h-[401px] flex flex-col gap-y-2 top-0 items-center justify-end select-none absolute z-10  ">
         <span
-          className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[130px] italic text-white  text-center  items-start gap-x-4 "
+          className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[120px] italic text-white  text-center  items-start gap-x-4 "
           style={heading.style}
         >
           Unlocking Your Potential
@@ -67,7 +67,7 @@ const Hero = () => {
             <Section delay={0.5}>
               <span
                 className={`
-    w-60 sm:w-72 xl:w-[480px] h-60 sm:h-72 xl:h-[480px]  sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] xl:text-[88px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading-[60px] xl:!leading-[120px] font-instrument-serif select-none
+    w-60 sm:w-72 xl:w-[475px] h-60 sm:h-72 xl:h-[475px]  sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] xl:text-[88px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading-[60px] xl:!leading-[120px] font-instrument-serif select-none
   `}
                 style={{
                   transform: "rotate(-30deg)",
@@ -75,7 +75,7 @@ const Hero = () => {
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.transform =
-                    "rotate(-30deg) scale(1.17)";
+                    "rotate(-30deg) scale(1.12)";
                 }}
                 onMouseOut={(e) => {
                   e.currentTarget.style.transform = "rotate(-30deg)";
