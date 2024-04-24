@@ -13,7 +13,7 @@ const Testimonial = () => {
   return (
     <section ref={targetRef} className="relative h-[250vh]  bg-neutral-100  ">
       <div className="sticky top-0 flex h-screen items-end  overflow-hidden -mb-40  ">
-        <motion.div style={{ x }} className="  flex items-end gap-6 sm:gap-8  ">
+        <motion.div style={{ x }} className="  flex items-end gap-5 sm:gap-8  ">
           {cards.map((card, index) => {
             const initialRotation = index % 2 === 0 ? -6 : 6;
             const rotate = useTransform(
