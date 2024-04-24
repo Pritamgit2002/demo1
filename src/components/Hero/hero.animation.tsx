@@ -33,7 +33,7 @@ export function Section({
   return (
     <section
       ref={ref}
-      className="w-max h-[80vh] lg:h-[128vh]  2xl:h-[101.5vh] flex items-end justify-center"
+      className="w-max h-[80vh] lg:h-[125vh]  2xl:h-[101.5vh] flex items-end justify-center"
     >
       <motion.div
         variants={ballVariants}

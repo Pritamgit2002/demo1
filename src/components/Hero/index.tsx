@@ -13,8 +13,8 @@ const subHeading = localFont({
 });
 const Hero = () => {
   return (
-    <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
-      <div className="w-full h-[250px] lg:h-[360px] xl:h-[480px] 2xl:h-[500px] flex flex-col gap-y-5 lg:gap-y-7 xl:gap-y-10 top-0 items-center justify-end select-none absolute z-10 ">
+    <div className=" flex items-center justify-center   w-full h-auto relative bg-[#1B1C1E] ">
+      <div className="w-full h-[250px] lg:h-[360px] xl:h-[465px] 2xl:h-[480px] flex flex-col gap-y-5 lg:gap-y-7 xl:gap-y-10 top-0 items-center justify-end select-none absolute z-10 ">
         <span
           className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[120px] italic text-white   text-center  items-start gap-x-4 "
           style={heading.style}
@@ -56,7 +56,7 @@ const Hero = () => {
       </div>
 
       {/* Animated components are called */}
-      <div className=" flex  items-end justify-center  w-full h-auto ">
+      <div className=" flex  items-end justify-center 2xl:justify-evenly w-full h-auto ">
         <div className="-translate-y-60 lg:translate-y-0 translate-x-36 sm:translate-x-7 lg:translate-x-4 z-20 xl:hover:-translate-y-5  hover:scale-105  transition-all duration-300  ">
           <Section delay={0.8}>
             <Image
