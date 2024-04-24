@@ -8,7 +8,7 @@ const Testimonial = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0, 3], ["1%", "-250%"]);
+  const x = useTransform(scrollYProgress, [0, 3], ["1%", "-280%"]);
 
   return (
     <section ref={targetRef} className="relative h-[250vh] bg-neutral-100 ">
