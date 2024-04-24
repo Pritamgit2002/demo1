@@ -11,11 +11,12 @@ const heading = localFont({
 const Hero = () => {
   return (
     <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
-      <div className="w-full h-[250px] lg:h-[401px] flex flex-col gap-y-2 top-0 items-center justify-end select-none absolute z-10  ">
+      <div className="w-full h-[250px] lg:h-[360px] xl:h-[480px] 2xl:h-[500px] flex flex-col gap-y-5 lg:gap-y-7 xl:gap-y-10 top-0 items-center justify-end select-none absolute z-10 ">
         <span
-          className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[120px] italic text-white  text-center  items-start gap-x-4 "
+          className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[120px] italic text-white   text-center  items-start gap-x-4 "
           style={heading.style}
         >
+          {/* lg:text-red-400 xl:text-gray-400 2xl:text-blue-400 */}
           Unlocking Your Potential
           <span>
             <Image
@@ -31,7 +32,7 @@ const Hero = () => {
           className=" text-5xl sm:text-6xl flex flex-col lg:hidden lg:text-[100px] italic text-white font-instrument-serif text-center  items-center gap-x-2 font-instrument-serif "
           style={heading.style}
         >
-          Unloacking Your
+          Unlocking Your
           <span className=" flex items-start gap-x-1 ">
             <span style={heading.style}>Potential</span>
             <Image
@@ -67,7 +68,7 @@ const Hero = () => {
             <Section delay={0.5}>
               <span
                 className={`
-    w-60 sm:w-72 xl:w-[475px] h-60 sm:h-72 xl:h-[475px]  sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] xl:text-[88px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading-[60px] xl:!leading-[120px] font-instrument-serif select-none
+    w-60 sm:w-72 lg:w-[450px] xl:w-[500px] 2xl:w-[520px] h-60 sm:h-72 lg:h-[450px] xl:h-[500px] 2xl:h-[520px] sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] lg:text-[74px] xl:text-[95px] 2xl:text-[105px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading-[60px] lg:!leading-[80px] xl:!leading-[120px] font-instrument-serif select-none
   `}
                 style={{
                   transform: "rotate(-30deg)",
@@ -104,7 +105,7 @@ const Hero = () => {
                   alt="done"
                   width={1200}
                   height={1200}
-                  className="w-40 sm:w-52 xl:w-72 h-40 sm:h-52 xl:h-72 object-cover rounded-full"
+                  className="w-40 sm:w-52 xl:w-80 2xl:w-72 h-40 sm:h-52 xl:h-80 2xl:h-72 object-cover rounded-full"
                 />
                 <Image
                   src="/girl.webp"
