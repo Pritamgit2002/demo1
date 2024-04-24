@@ -12,10 +12,10 @@ import { Section } from "./hero.animation";
 const Hero = () => {
   return (
     <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
-      <div className="w-full h-96 flex flex-col gap-y-2 top-0 items-center justify-end select-none absolute z-10   ">
-        <span className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[100px] italic text-white font-serif text-center  items-start gap-x-2 ">
-          Unloacking Your Potential
-          <span className="  ">
+      <div className="w-full h-[250px] lg:h-[390px] flex flex-col gap-y-6 top-0 items-center justify-end select-none absolute z-10 ">
+        <span className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[130px] italic text-white instrument-serif-regular-italic text-center  items-start gap-x-4 ">
+          Unlocking Your Potential
+          <span className=" font-instrument-serif ">
             <Image
               src="/green.svg"
               alt="logo"
@@ -25,7 +25,7 @@ const Hero = () => {
             />
           </span>
         </span>
-        <span className=" text-5xl sm:text-6xl flex flex-col lg:hidden lg:text-[100px] italic text-white font-serif text-center  items-center gap-x-2 ">
+        <span className=" text-5xl sm:text-6xl flex flex-col lg:hidden lg:text-[100px] italic text-white font-instrument-serif text-center  items-center gap-x-2 font-instrument-serif ">
           Unloacking Your
           <span className=" flex items-start gap-x-1 ">
             <span>Potential</span>
@@ -38,19 +38,19 @@ const Hero = () => {
             />
           </span>
         </span>
-        <span className=" flex-wrap text-base sm:text-xl lg:text-2xl text-[#ABEE5F] text-center ">
+        <span className=" flex-wrap text-base sm:text-xl lg:text-2xl text-[#ABEE5F] text-center w-72 lg:w-auto ">
           Sophy Crown - Life Coach & Performance Consultant
         </span>
       </div>
       <div className=" flex  items-end justify-center  w-full h-auto ">
-        <div className="-translate-y-60 lg:translate-y-0 translate-x-36 sm:translate-x-7 lg:translate-x-0 z-20   hover:scale-105 hover:-translate-y-7 transition-all duration-300  ">
+        <div className="-translate-y-60 lg:translate-y-0 translate-x-36 sm:translate-x-7 lg:translate-x-4 z-20 xl:hover:-translate-y-5  hover:scale-105  transition-all duration-300  ">
           <Section delay={0.8}>
             <Image
               src="/chakra.svg"
               alt="done"
               width={1200}
               height={1200}
-              className="w-20 sm:w-32 xl:w-24 h-20 sm:h-32 xl:h-24 object-cover rounded-full"
+              className="w-20 sm:w-32 xl:w-24 h-20 sm:h-32 xl:h-24 object-cover rounded-full cursor-pointer "
             />
           </Section>
         </div>
@@ -60,16 +60,26 @@ const Hero = () => {
             <Section delay={0.5}>
               <span
                 className={`
-    w-60 sm:w-96 xl:w-[530px] h-60 sm:h-96 xl:h-[530px] pt-10 sm:pt-16 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-4xl sm:text-6xl xl:text-[82px] -rotate-12 cursor-pointer hover:scale-110 hover:-translate-y-6 transition-all duration-500 z-10 sm:!leading-[60px] xl:!leading-[85px] font-serif select-none font-stretch
+    w-60 sm:w-72 xl:w-[480px] h-60 sm:h-72 xl:h-[480px]  sm:pt-12 lg:pt-0 rounded-full bg-[#ABEE5F] text-[#1B1C1E] text-center flex sm:flex-wrap items-center justify-center text-5xl sm:text-[55px] xl:text-[88px] xl:font-medium cursor-pointer hover:scale-105  hover:-translate-y-6 transition-all duration-500 z-10 !leading-[60px] xl:!leading-[120px] font-instrument-serif select-none
   `}
-                // style={{ lineHeight: "115px" }}
+                style={{
+                  transform: "rotate(-30deg)",
+                  transition: "transform 0.5s ease", // Add transition for smooth animation
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform =
+                    "rotate(-30deg) scale(1.17)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = "rotate(-30deg)";
+                }}
               >
                 Happiness <br /> & Fulfillment
               </span>
             </Section>
             <Section delay={0.6}>
               <span
-                className={` w-max xl:w-80 h-24 xl:h-32 p-5 xl:p-10 rounded-full bg-white border-dashed  text-[#1B1C1E] text-center hidden lg:flex  items-center justify-center gap-1 text-xl sm:text-3xl  hover:-rotate-12 hover:scale-110 hover:-translate-y-6 cursor-pointer transition-all duration-300 z-30 font-serif italic absolute bottom-0 `}
+                className={` w-max xl:w-80 h-24 xl:h-36 p-5 xl:p-10 rounded-full bg-white border-dashed  text-[#1B1C1E] text-center hidden lg:flex  items-center justify-center gap-1 text-xl sm:text-[32px]  hover:-rotate-12 hover:scale-110 hover:-translate-y-6 cursor-pointer transition-all duration-300 z-30 font-instrument-serif italic absolute bottom-0 `}
               >
                 <span>Team</span>
                 <div className=" text-xl space-x-4 ">
@@ -79,7 +89,7 @@ const Hero = () => {
               </span>
             </Section>
           </div>
-          <div className=" flex -translate-y-36 lg:translate-y-0 translate-x-3 sm:translate-x-0 hover:-translate-y-7  hover:scale-105 transition-all duration-300 cursor-pointer ">
+          <div className=" flex -translate-y-40 lg:translate-y-0 translate-x-3 sm:translate-x-0 hover:-translate-y-7  hover:scale-105 transition-all duration-300 cursor-pointer z-30 ">
             <Section delay={0.7}>
               <div className="relative">
                 <Image
@@ -87,23 +97,23 @@ const Hero = () => {
                   alt="done"
                   width={1200}
                   height={1200}
-                  className="w-40 sm:w-60 xl:w-72 h-40 sm:h-60 xl:h-72 object-cover rounded-full"
+                  className="w-40 sm:w-52 xl:w-72 h-40 sm:h-52 xl:h-72 object-cover rounded-full"
                 />
                 <Image
                   src="/girl.webp"
                   alt="done"
                   width={1200}
                   height={1200}
-                  className="w-28 sm:w-40 xl:w-52 h-28 sm:h-40 xl:h-52 object-cover rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  className="w-28 sm:w-36 xl:w-52 h-28 sm:h-36 xl:h-52 object-cover rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 />
               </div>
             </Section>
           </div>
         </div>
-        <div className=" -translate-x-36 sm:-translate-x-20 lg:translate-x-0 ">
+        <div className=" -translate-x-36 sm:-translate-x-20 lg:-translate-x-4 ">
           <Section delay={0.2}>
             <span
-              className={` h-40 sm:h-48 w-40 sm:w-48 p-2 font-serif rounded-full bg-white text-center flex flex-col  items-center justify-center text-lg sm:text-lg cursor-pointer hover:scale-110 hover:-translate-y-6 transition-all duration-500 z-10 delay-300 text-[#1B1C1E] italic `}
+              className={` h-40 w-40 p-4 font-instrument-serif rounded-full bg-white text-center flex flex-col  items-center justify-center text-lg sm:text-xl cursor-pointer xl:hover:scale-110 hover:xl:-translate-y-2 transition-all duration-500 delay-300 text-[#1B1C1E] italic `}
             >
               <Image
                 src="/black book.svg"
