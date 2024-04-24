@@ -9,19 +9,19 @@ export const Card = ({ card }: { card: any }) => {
     <div
       key={card.id}
       style={subHeading.style}
-      className={`group relative h-max w-[350px] overflow-hidden rounded-3xl py-10 px-8 shadow-md shadow-gray-400 flex flex-col gap-y-8 ${
+      className={`group relative h-max w-[350px] overflow-hidden rounded-3xl py-8 sm:py-10 px-5 sm:px-7 shadow-md shadow-gray-400 flex flex-col gap-y-8 ${
         card.id % 2 === 0
           ? "bg-black text-[#abee5f]"
           : "bg-[#abee5f] text-black"
       }`}
     >
       <div
-        className=" text-xl sm:text-2xl leading-tight "
+        className=" text-xl sm:text-2xl !leading-loose md:!leading-relaxed "
         style={{ lineHeight: "45px" }}
       >
         {card.comment}
       </div>
-      <div className=" w-full flex items-center justify-start gap-x-4  ">
+      <div className=" w-full flex items-center justify-start  sm:gap-x-4  ">
         <Image
           src={card.image}
           alt="image"
