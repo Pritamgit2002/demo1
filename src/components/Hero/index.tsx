@@ -1,21 +1,23 @@
 "use client";
 import "./hero.style.css";
 import React, { useEffect, useState } from "react";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
-import { GiBurningBook } from "react-icons/gi";
-import { LiaDharmachakraSolid } from "react-icons/lia";
 import Image from "next/image";
 import { Section } from "./hero.animation";
-
+import localFont from "next/font/local";
+const heading = localFont({
+  src: "../../../public/fonts/InstrumentSerif-Italic.ttf",
+});
 const Hero = () => {
   return (
     <div className=" flex items-center justify-center  w-full h-auto relative bg-[#1B1C1E] ">
-      <div className="w-full h-[250px] lg:h-[390px] flex flex-col gap-y-6 top-0 items-center justify-end select-none absolute z-10 ">
-        <span className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[130px] italic text-white instrument-serif-regular-italic text-center  items-start gap-x-4 ">
+      <div className="w-full h-[250px] lg:h-[430px] flex flex-col gap-y-6 top-0 items-center justify-end select-none absolute z-10  ">
+        <span
+          className=" text-5xl sm:text-6xl hidden lg:flex lg:text-[130px] italic text-white  text-center  items-start gap-x-4 "
+          style={heading.style}
+        >
           Unlocking Your Potential
-          <span className=" font-instrument-serif ">
+          <span>
             <Image
               src="/green.svg"
               alt="logo"
@@ -25,10 +27,13 @@ const Hero = () => {
             />
           </span>
         </span>
-        <span className=" text-5xl sm:text-6xl flex flex-col lg:hidden lg:text-[100px] italic text-white font-instrument-serif text-center  items-center gap-x-2 font-instrument-serif ">
+        <span
+          className=" text-5xl sm:text-6xl flex flex-col lg:hidden lg:text-[100px] italic text-white font-instrument-serif text-center  items-center gap-x-2 font-instrument-serif "
+          style={heading.style}
+        >
           Unloacking Your
           <span className=" flex items-start gap-x-1 ">
-            <span>Potential</span>
+            <span style={heading.style}>Potential</span>
             <Image
               src="/green.svg"
               alt="logo"
@@ -42,6 +47,8 @@ const Hero = () => {
           Sophy Crown - Life Coach & Performance Consultant
         </span>
       </div>
+
+      {/* Animated components are called */}
       <div className=" flex  items-end justify-center  w-full h-auto ">
         <div className="-translate-y-60 lg:translate-y-0 translate-x-36 sm:translate-x-7 lg:translate-x-4 z-20 xl:hover:-translate-y-5  hover:scale-105  transition-all duration-300  ">
           <Section delay={0.8}>
